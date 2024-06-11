@@ -16,7 +16,7 @@ svg{
     color: #fff;
 }
 :root{
-    --width-default: min(1200px, 90vw);
+    --width-default: min(1200px, 100vw);
     --diameter: 1432px;
 }
 .logo img{
@@ -91,7 +91,7 @@ header{
     background-image: var(--url);
     background-size: var(--diameter) var(--diameter);
     background-position: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     transform: rotate(-60deg);
     position: relative;
     transition: 1s;
@@ -99,24 +99,20 @@ header{
 .slider .list .item .image::before, 
 .slider .list .item .image::after{
     position: absolute;
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     content: '';
     border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)  rotate(-120deg);
-    background-image: 
-    linear-gradient(to right, #0004, #0004),
-    var(--url);
-    background-size: var(--diameter) var(--diameter);
+    background: #00000061;
     background-position: center;
     transition: 1s;
 }
 .slider .list .item .image::after{
     width: 30%;
     height: 30%;
-    background-image: var(--url);
     border: 3px solid #fff2;
     transform: translate(-50%, -50%) rotate(-170deg);
 }
@@ -188,10 +184,9 @@ header{
     height: 70%;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(img/343275028_786396492829890_7012552391466820016_n-removebg-preview.png);
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    background-image: url(img/model.png);
+    background-size: cover;
+    background-position: top;
     pointer-events: none;
     animation: showModel 1s ease-in-out 1 forwards;
 }
