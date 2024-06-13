@@ -20,7 +20,8 @@ svg{
     --diameter: 1432px;
 }
 .logo img{
-    width: 50px;
+    width: 4rem;
+    filter: hue-rotate(280deg);
 }
 header{
     width: var( --width-default);
