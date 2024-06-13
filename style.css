@@ -182,14 +182,14 @@ header{
     content: '';
     bottom: 0;
     width: min(1000px, 100vw);
-    height: 70%;
+    height: 80%;
     left: 50%;
     transform: translateX(-50%);
     background-image: url(img/model.png);
     background-size: cover;
     background-position: top;
     pointer-events: none;
-    animation: showModel 1s ease-in-out 1 forwards;
+    animation: showModel 1.4s ease-in-out 1 forwards;
 }
 @keyframes showModel{
     from{
